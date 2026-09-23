@@ -1,4 +1,3 @@
-# -Real-time-industrial-defect-detection-
 # Real-Time Industrial Defect Detection System
 
 > **Computer Vision · YOLOv8 · Industrial Quality Control · Edge AI**
