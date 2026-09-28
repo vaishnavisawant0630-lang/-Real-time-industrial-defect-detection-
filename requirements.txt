@@ -1,0 +1,16 @@
+ultralytics
+opencv-python
+numpy
+pandas
+matplotlib
+seaborn
+albumentations
+scikit-learn
+fastapi
+uvicorn
+python-multipart
+prometheus-client
+onnx
+onnxruntime
+Pillow
+PyYAML

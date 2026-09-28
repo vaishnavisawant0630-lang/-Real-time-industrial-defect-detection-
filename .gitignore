@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Model files
+*.pt
+*.onnx
+*.engine
+
+# Large datasets
+# Uncomment if you do NOT want the full dataset in Git
+# data/neu/images/
