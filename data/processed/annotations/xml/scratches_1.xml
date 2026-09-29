@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>processed</folder>
+    <filename>scratches_1.jpg</filename>
+    <size>
+        <width>200</width>
+        <height>200</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>scratches</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>23</xmin>
+            <ymin>9</ymin>
+            <xmax>47</xmax>
+            <ymax>168</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>scratches</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>4</xmin>
+            <ymin>180</ymin>
+            <xmax>13</xmax>
+            <ymax>192</ymax>
+        </bndbox>
+    </object>
+</annotation>
