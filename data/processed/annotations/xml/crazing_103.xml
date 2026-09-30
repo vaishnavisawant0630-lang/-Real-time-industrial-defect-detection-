@@ -14,10 +14,10 @@
         <truncated>0</truncated>
         <difficult>0</difficult>
         <bndbox>
-            <xmin>70</xmin>
-            <ymin>16</ymin>
-            <xmax>200</xmax>
-            <ymax>105</ymax>
+            <xmin>1</xmin>
+            <ymin>18</ymin>
+            <xmax>130</xmax>
+            <ymax>99</ymax>
         </bndbox>
     </object>
     <object>
@@ -26,22 +26,22 @@
         <truncated>0</truncated>
         <difficult>0</difficult>
         <bndbox>
-            <xmin>0</xmin>
-            <ymin>24</ymin>
-            <xmax>78</xmax>
-            <ymax>128</ymax>
-        </bndbox>
-    </object>
-    <object>
-        <name>crazing</name>
-        <pose>Unspecified</pose>
-        <truncated>0</truncated>
-        <difficult>0</difficult>
-        <bndbox>
-            <xmin>109</xmin>
-            <ymin>108</ymin>
+            <xmin>126</xmin>
+            <ymin>29</ymin>
             <xmax>198</xmax>
-            <ymax>196</ymax>
+            <ymax>130</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>crazing</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>107</ymin>
+            <xmax>86</xmax>
+            <ymax>191</ymax>
         </bndbox>
     </object>
 </annotation>

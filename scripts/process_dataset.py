@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-DATA_ROOT = PROJECT_ROOT / "data" 
+DATA_ROOT = PROJECT_ROOT / "data"
 
 RAW_ROOT = DATA_ROOT / "raw"
 

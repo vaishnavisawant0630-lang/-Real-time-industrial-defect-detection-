@@ -14,3 +14,4 @@ onnx
 onnxruntime
 Pillow
 PyYAML
+tqdm
