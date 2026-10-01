@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>processed</folder>
+    <filename>rolled-in_scale_186.jpg</filename>
+    <size>
+        <width>200</width>
+        <height>200</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>rolled-in_scale</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>47</xmin>
+            <ymin>11</ymin>
+            <xmax>200</xmax>
+            <ymax>50</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>rolled-in_scale</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>20</xmin>
+            <ymin>82</ymin>
+            <xmax>181</xmax>
+            <ymax>193</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>rolled-in_scale</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>0</xmin>
+            <ymin>114</ymin>
+            <xmax>75</xmax>
+            <ymax>159</ymax>
+        </bndbox>
+    </object>
+</annotation>

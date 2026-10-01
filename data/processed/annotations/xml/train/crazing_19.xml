@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>processed</folder>
+    <filename>crazing_19.jpg</filename>
+    <size>
+        <width>200</width>
+        <height>200</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>crazing</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>65</xmin>
+            <ymin>5</ymin>
+            <xmax>108</xmax>
+            <ymax>116</ymax>
+        </bndbox>
+    </object>
+</annotation>

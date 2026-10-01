@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>processed</folder>
+    <filename>crazing_20.jpg</filename>
+    <size>
+        <width>200</width>
+        <height>200</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>crazing</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>69</xmin>
+            <ymin>109</ymin>
+            <xmax>199</xmax>
+            <ymax>193</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>crazing</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>58</xmin>
+            <ymin>60</ymin>
+            <xmax>114</xmax>
+            <ymax>100</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>patches</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>22</xmin>
+            <ymin>29</ymin>
+            <xmax>60</xmax>
+            <ymax>65</ymax>
+        </bndbox>
+    </object>
+</annotation>
