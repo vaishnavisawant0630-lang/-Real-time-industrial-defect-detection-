@@ -2,116 +2,90 @@ from pathlib import Path
 import random
 import shutil
 
-IMAGE_DIR = Path("data/processed/images")
-XML_DIR = Path("data/processed/annotations/xml")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-OUTPUT = Path("data/processed")
+IMAGE_SOURCE = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "images"
+)
 
-random.seed(42)
+XML_SOURCE = (
+    PROJECT_ROOT
+    / "data"
+    / "annotations"
+    / "xml"
+)
 
-IMAGE_EXTENSIONS = {
-    ".jpg",
-    ".png",
-    ".jpeg",
-    ".bmp"
+SPLITS = {
+    "train": 0.70,
+    "val": 0.20,
+    "test": 0.10,
 }
 
-# FIND IMAGE/XML PAIRS
-
-pairs = []
-
-for image in IMAGE_DIR.iterdir():
-    if image.suffix.lower() not in IMAGE_EXTENSIONS:
-        continue
-
-    xml = XML_DIR / f"{image.stem}.xml"
-
-    if xml.exists():
-        pairs.append((image,xml))
+RANDOM_SEED = 42
 
 
-print("="*70)
-print("DATASET SPLITTING")
-print("="*70)
-print(f"Valid image/xml pairs: {len(pairs)}")
+def main():
+    random.seed(RANDOM_SEED)
 
-# SHUFFLE
-
-random.shuffle(pairs)
-
-# SPLIT
-
-total = len(pairs)
-
-train_end = int(total * 0.70)
-val_end = int(total * 0.90)
-
-train_data = pairs[:train_end]
-val_data = pairs[train_end:val_end]
-test_data = pairs[val_end:]
-
-splits = {
-    "train": train_data,
-    "val": val_data,
-    "test": test_data
-}
-
-# CREATE DIRECTORIES
-
-for split in splits:
-    (
-        OUTPUT
-        / "images"
-        / split
-    ).mkdir(
-        parents=True,
-        exist_ok=True
+    images = sorted(
+        IMAGE_SOURCE.glob("*.*")
     )
 
-    (
-        OUTPUT
-        / "annotations"
-        / "xml"
-        / split
-    ).mkdir(
-        parents=True,
-        exist_ok=True
-    )
+    valid_pairs = []
 
-# COPY FILES
+    for image in images:
+        xml = XML_SOURCE / f"{image.stem}.xml"
+        if xml.exists():
+            valid_pairs.append(
+                (image,xml)
+            )
+    random.shuffle(valid_pairs)
+    total = len(valid_pairs)
 
-for split, data in splits.items():
-    print(
-        f"\nCopying {split}: {len(data)}"
-    )
+    train_end = int(total * SPLITS["train"])
+    val_end = train_end + int(total * SPLITS["val"])
 
-    for image,xml in data:
-        shutil.copy2(
-            image,
-            OUTPUT
-            / "images"
-            / split
-            / image.name
+    split_data = {
+        "train": valid_pairs[:train_end],
+        "val": valid_pairs[train_end:val_end],
+        "test": valid_pairs[val_end:],
+    }
+
+    for split, pairs in split_data.items():
+        image_dir = IMAGE_SOURCE / split
+        xml_dir = XML_SOURCE / split
+
+        image_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+        xml_dir.mkdir(
+            parents=True,
+            exist_ok=True
         )
 
-        shutil.copy2(
-            xml,
-            OUTPUT
-            / "annotations"
-            / "xml"
-            / split
-            / xml.name
-        )
+        for image,xml in pairs:
+            shutil.copy2(
+                image,
+                image_dir / image.name
+            )
+            shutil.copy2(
+                xml,
+                xml_dir / xml.name
+            )
 
-# SUMMARY
+        print(f"{split}: {len(pairs)}")
 
-print("\n")
-print("="*70)
-print("SPLIT COMPLETE")
-print("="*70)
+    print()
+    print("DATASET SPLIT COMPLETE")
 
-print(f"Total : {total}")
-print(f"Train : {len(train_data)}")
-print(f"Val   : {len(val_data)}")
-print(f"Test  : {len(test_data)}")
+if __name__ == "__main__":
+    main()
+
+    
+        
+
 
