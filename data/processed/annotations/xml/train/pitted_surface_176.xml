@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+    <folder>processed</folder>
+    <filename>pitted_surface_176.jpg</filename>
+    <size>
+        <width>200</width>
+        <height>200</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>pitted_surface</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>64</ymin>
+            <xmax>112</xmax>
+            <ymax>194</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>pitted_surface</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>73</xmin>
+            <ymin>24</ymin>
+            <xmax>181</xmax>
+            <ymax>183</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>pitted_surface</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>1</ymin>
+            <xmax>81</xmax>
+            <ymax>42</ymax>
+        </bndbox>
+    </object>
+</annotation>
