@@ -1,17 +1,28 @@
-ultralytics
-opencv-python
+# Core Python
 numpy
 pandas
-matplotlib
-seaborn
-albumentations
-scikit-learn
-fastapi
-uvicorn
-python-multipart
-prometheus-client
-onnx
-onnxruntime
 Pillow
 PyYAML
+
+# Computer Vision
+opencv-python
+scikit-image
+
+# Deep Learning
+torch
+torchvision
+ultralytics
+
+# Machine Learning
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Web Application
+streamlit
+
+# Utilities
 tqdm
+requests
