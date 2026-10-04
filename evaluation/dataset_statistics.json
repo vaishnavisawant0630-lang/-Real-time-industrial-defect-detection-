@@ -1,0 +1,26 @@
+{
+    "train": {
+        "crazing": 337,
+        "inclusion": 620,
+        "patches": 349,
+        "pitted_surface": 257,
+        "rolled_in_scale": 352,
+        "scratches": 298
+    },
+    "val": {
+        "crazing": 129,
+        "inclusion": 157,
+        "patches": 104,
+        "pitted_surface": 54,
+        "rolled_in_scale": 111,
+        "scratches": 69
+    },
+    "test": {
+        "crazing": 58,
+        "inclusion": 75,
+        "patches": 41,
+        "pitted_surface": 34,
+        "rolled_in_scale": 33,
+        "scratches": 60
+    }
+}
