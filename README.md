@@ -37,14 +37,17 @@ A real-time computer vision system for detecting, classifying, and localizing su
 
 | # | Task | Files / Module | Status |
 |---|---|---|---|
-| 1 | **NEU Dataset Collection** | `data/raw/` | ⏳ In Progress |
-| 2 | **Dataset Organization** | `data/images/`, `data/labels/` | ⬜ Not Started |
-| 3 | **Annotation Verification** | `annotation_checker.py` | ⬜ Not Started |
-| 4 | **YOLO Annotation Conversion** | `convert_annotations.py` | ⬜ Not Started |
-| 5 | **Train/Validation/Test Split** | `dataset_split.py` | ⬜ Not Started |
-| 6 | **Image Preprocessing** | `preprocessing.py` | ⬜ Not Started |
-| 7 | **Data Augmentation** | `augmentation.py` | ⬜ Not Started |
-| 8 | **Dataset Statistics** | `dataset_stats.py` | ⬜ Not Started |
+|  # | Task                            | File / Directory               | Status        |
+| -: | ------------------------------- | ------------------------------ | ------------- |
+|  1 | **NEU Dataset Collection**      | `data/raw/`                    | ✅ Complete    |
+|  2 | **Dataset Organization**        | `data/images/`, `data/labels/` | ✅ Complete    |
+|  3 | **Annotation Verification**     | `annotation_checker.py`        | ✅ Complete    |
+|  4 | **YOLO Annotation Conversion**  | `convert_annotations.py`       | ✅ Complete    |
+|  5 | **Train/Validation/Test Split** | `dataset_split.py`             | ⬜ Not Started |
+|  6 | **Image Preprocessing**         | `preprocessing.py`             | ⬜ Not Started |
+|  7 | **Data Augmentation**           | `augmentation.py`              | ⬜ Not Started |
+|  8 | **Dataset Statistics**          | `dataset_stats.py`             | ⬜ Not Started |
+
 
 ### Stage 1 Deliverables
 
