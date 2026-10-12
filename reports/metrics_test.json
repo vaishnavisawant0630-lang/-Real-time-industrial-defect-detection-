@@ -1,0 +1,28 @@
+{
+    "evaluation_date": "2026-10-12T12:44:59",
+    "model": "models\\best.pt",
+    "dataset": "data\\dataset.yaml",
+    "split": "test",
+    "image_size": 640,
+    "device": "cpu",
+    "precision": 0.7535937586514719,
+    "recall": 0.6174761367196928,
+    "mAP50": 0.6952897919852149,
+    "mAP50_95": 0.38979409135768195,
+    "per_class_mAP50": {
+        "crazing": 0.32649144438783095,
+        "inclusion": 0.6655189709914354,
+        "patches": 0.9447757289930312,
+        "pitted_surface": 0.7908381020280348,
+        "rolled_in_scale": 0.5474124289383014,
+        "scratches": 0.8967020765726555
+    },
+    "per_class_mAP50_95": {
+        "crazing": 0.12597706961452368,
+        "inclusion": 0.36067679242174927,
+        "patches": 0.6044528114854224,
+        "pitted_surface": 0.5081201196273337,
+        "rolled_in_scale": 0.23862448529977137,
+        "scratches": 0.5009132696972918
+    }
+}
